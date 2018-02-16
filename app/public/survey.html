@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<title></title>
+
+	<style>
+		.passed {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<button id="submit">Post Me</button>
+
+	<div class="passed">You passed data</div>
+
+</body>
+</html>
+
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // This line is the magic. It"s very similar to the standard ajax function we used.
+      // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+      // The callback is the response of the server. 
+
+
+      var testData = { 
+      	user: [1,2,3,4,5,4,3,2,1,2],
+      	something: "hi",
+      	array: ['1','2']
+       };
+
+      console.log(testData);
+
+      $.post("api/friends", testData,
+      	function(data) {
+      		console.log("survey")
+      		console.log(data);
+
+      		$(".passed").show();
+      		$(".passed").html(data.user.join(' '));
+      	});
+
+
+  
+
+     
+    });
+
+</script>
