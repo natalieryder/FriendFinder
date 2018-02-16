@@ -1,18 +1,2 @@
-var friends = {
-  "name":"Squirtle",
-  "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-  "scores":[
-      5,
-      1,
-      4,
-      4,
-      5,
-      1,
-      2,
-      5,
-      4,
-      1
-    ]
-};
-
-module.exports = friends;
+var friends = [{"name":"Squirtle","photo":"http://static.pokemonpets.com/images/monsters-images-300-300/7-Squirtle.png","scores":[5,1,4,4,5,1,2,5,4,1]},{"name":"Pikachu","photo":"https://vignette.wikia.nocookie.net/youtubepoop/images/f/f7/5Pikachu.png/revision/latest?cb=20141108062013","scores":[2,4,1,3,4,5,5,4,1,1]},{"name":"Bulbasaur","photo":"https://lh3.googleusercontent.com/-smI5p-zu0yg/VuESGAPnL6I/AAAAAAAAF48/lzadz7S87341SNyXoDcj5Py914ve89jfACCo/s290/Bulbasaur%2BPokemon%2BGo.png?refresh=900&resize_h=NaN&resize_w=NaN","scores":["1","1","1","1","1","1","1","1","1","1"]},{"name":"Charmander","photo":"https://vignette.wikia.nocookie.net/agus-pokemon/images/5/56/Charmander.png/revision/latest?cb=20150531123106","scores":["5","5","5","5","5","5","5","5","5","5"]},{"name":"Seel","photo":"https://cdn.bulbagarden.net/upload/thumb/1/1f/086Seel.png/250px-086Seel.png","scores":["3","2","1","2","2","2","3","1","3","1"]},{"name":"Growlithe","photo":"https://cdn.bulbagarden.net/upload/thumb/3/3d/058Growlithe.png/250px-058Growlithe.png","scores":["2","4","1","5","2","3","2","1","1","3"]},{"name":"Pidgy","photo":"https://cdn.bulbagarden.net/upload/thumb/5/55/016Pidgey.png/250px-016Pidgey.png","scores":["4","5","4","3","1","4","1","3","3","1"]},{"name":"Magikarp","photo":"https://cdn.bulbagarden.net/upload/thumb/0/02/129Magikarp.png/250px-129Magikarp.png","scores":["3","1","1","5","5","5","1","1","1","1"]}]; 
+ module.exports = friends;
